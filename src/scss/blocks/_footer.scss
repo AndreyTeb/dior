@@ -1,0 +1,134 @@
+.footer {
+	background-color: var(--footer-color);
+	padding: 66px 0 100px;
+
+	@include mobile {
+		padding: 50px 0;
+	}
+	a{
+		color: var(--font-main);
+	}
+  &__top {
+		margin-bottom: 70px;
+		display: flex;
+		justify-content: space-between;
+		gap: 0 70px;
+
+		@include tablet-s {
+			display: block;
+		}
+
+		@include mobile {
+			margin-bottom: 30px;
+		}
+	}
+  &__logo {
+		margin-right: 10px;
+
+		@include tablet-s {
+			display: inline-block;
+			margin-bottom: 20px;
+		}
+	}
+  &__items {
+		flex-basis: 387px;
+	}
+  &__item + .footer__item {
+		margin-top: 70px;
+
+		@include mobile {
+			margin-top: 30px;
+		}
+	}
+  &__item-title {
+		text-transform: uppercase;
+		font-weight: 700;
+		margin-bottom: 10px;
+	}
+  &__item-form {
+		position: relative;
+
+		@include tablet-s {
+			max-width: 400px;
+		}
+	}
+  &__item-input {
+		width: 100%;
+		display: block;
+		padding: 10px 60px 10px 0;
+
+		border-bottom: 1px solid #000;
+		background-color: var(--footer-color);
+		font-size: 14px;
+		font-weight: 400;
+		color: var(--text-color);
+		&::placeholder{
+			font-size: 12px;
+			color: rgba(0, 0, 0, .4);
+			font-family: var(--font-main);
+			font-weight: 400;	
+		}
+	}
+  &__item-btn {
+		position: absolute;
+		right: 0;
+		top: 10px;
+	}
+  &__item-list li{
+		padding-top: 10px;
+	}
+  &__social-list {
+		margin-right: 105px;
+		margin-left: 10px; 	
+		align-self: flex-end;
+
+		@include tablet-s {
+			margin-top: 30px;
+			display: flex;
+			gap: 0 40px;
+			margin-left: 0;
+			margin-right: 0;
+		}
+	}
+  &__social-item + .footer__social-item {
+		margin-top: 20px;
+
+		@include tablet-s {
+			margin-top: 0;
+		}
+	}
+	&__social-item{
+		path{
+			transition: all 0.2s;
+		}
+	}
+	&__social-item:hover{
+		path{
+			fill: var(--accent);
+		}
+	}
+  &__nav {
+		display: flex;
+		justify-content: flex-end;
+		margin-right: 105px;
+
+		@include tablet-l {
+			margin-right: 0;
+			justify-content: center;
+		}
+	}
+	&__img{
+		@include tablet-l {
+			display: none;
+		}
+	}
+  &__nav-list {
+		display: flex;
+		gap: 0 20px;
+
+		@include tablet-s {
+			flex-wrap: wrap;
+			gap: 10px 20px;
+		}
+	}
+}

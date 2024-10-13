@@ -1,0 +1,24 @@
+.header {
+	margin-bottom: 90px;
+  &__inner {
+		padding-top: 30px;
+
+		display: flex;
+		justify-content: space-between;
+		
+		@include mobile {
+			flex-wrap: wrap;
+			align-items: center;
+		}
+	}
+  &__title {
+		font-family: var(--font-accent);
+		text-transform: uppercase;
+		margin-left: auto;
+
+		@include tablet {
+				display: none;
+		}
+	}
+}
+

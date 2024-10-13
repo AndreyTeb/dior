@@ -1,0 +1,32 @@
+.video {
+	margin-bottom: 150px;
+
+	@include mobile {
+		margin-bottom: 50px;
+	}
+  &__box {
+		margin-left: auto;
+		max-width: 997px;
+		min-height: 600px;
+		background-image: url(./../../img/video/video-bg.jpg);
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		@include tablet-xl {
+			margin: 0 auto;
+		}
+
+		@include tablet-s {
+			min-height: 435px;
+		}
+
+		@include mobile-l {
+			min-height: 225px;
+		}
+	}
+}

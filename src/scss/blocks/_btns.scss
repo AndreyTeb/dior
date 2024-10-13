@@ -1,0 +1,15 @@
+.button{
+	color: var(--accent);
+		font-weight: 700;
+		padding: 21px 55px;
+		border: 1px solid var(--accent);
+		display: inline-block;
+		transition: all 0.2s ease-in;
+		&:hover{
+			background-color: var(--accent);
+			color: #fff;
+		}
+		&:active{
+			opacity: 0.8;
+		}
+}

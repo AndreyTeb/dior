@@ -1,0 +1,10 @@
+.top {
+	margin-bottom: 100px;
+
+	@include mobile-l {
+		margin-bottom: 40px;
+	}
+	.swiper{
+		padding-bottom: 50px;
+	}
+}
